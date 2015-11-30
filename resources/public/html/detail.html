@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+<div class="panel-body">
+
+    <div id="one">
+
+        <input name="title" placeholder="position name" ng-model="position.title"/>
+
+        <div ng-repeat="candidate in candidates track by $index">
+            <input name="candidates" ng-style="{'margin-top': top}" class="fieldsme" type="text"
+                   placeholder="candidates's name"
+                   ng-model="candidate.candidate"/>
+            <button type="button" class="delete" ng-style="{'margin-top': top}" class="fieldsme"
+                    ng-click="remove($index)">&#10006
+            </button>
+        </div>
+        <div>
+        <button type="button" class="btn" ng-click="add()">add name</button>
+        <button type="submit" class="btn">submit ballot</button>
+        </div>
+
+    </div>
+    <div id="two">
+        <h4 class="title" ng-show="position.title == ''">[ position ]</h4>
+        <h4 class="title" ng-show="position.title != null">{{position.title}}</h4>
+
+        <div class="list-group">
+            <button ng-repeat="candidate in candidates" class="candidates list-group-item"> {{candidate.candidate}}</button>
+        </div>
+    </div>
+</div>
+<div class="panel-footer">
+    <ul class="nav nav-pills" style="align-items: center;">
+        <li role="presentation"><a href="#">new ballot</a></li>
+        <li role="presentation"><a href="#">Change room password</a></li>
+        <li role="presentation"><a href="#">change admin password</a></li>
+        <li role="presentation"><a href="#">ballot results</a></li>
+    </ul>
+</div>
+</div>

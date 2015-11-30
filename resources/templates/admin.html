@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block header %}
+<base href="/admin">
+{% endblock %}
+
+{% block content %}
+<form method="POST">{% csrf-field %}
+<div ng-app="project">
+<div ng-view=""></div>
+</div>
+</form>
+
+
+{% endblock %}
+
+{% block page-scripts %}
+
+{% script "/js/angular.min.js" %}
+{% script "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js" %}
+{% script "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-resource.min.js" %}
+{% script "/js/vote.js" %}
+{% script "/js/voteService.js" %}
+{% endblock %}

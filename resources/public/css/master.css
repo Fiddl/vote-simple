@@ -1,0 +1,67 @@
+body {
+    background: rgb(29, 31, 33);
+}
+section {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+div#one {
+    padding-left: 20px;
+    width: 50%;
+    float: left;
+}
+div#two {
+    width: 50%;
+    float: right;
+}
+h4.title {
+    margin: 0px 0px 20px 0px;
+    font-weight: 900;
+    text-align:center;
+}
+input {
+    text-align:center;
+    font-weight: 900;
+    height: 34px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    border-top: none;
+    border-bottom: 1px solid #DDD;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+}
+input[type=text], textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+button {
+    font-weight: 900;
+}
+button.delete{
+    background: #ff454a;
+    border-color: #ff454a;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+button.candidates{
+    width: 100%;
+    height: 34px;
+}
+button.list-group-item{
+    text-align:center;
+}
