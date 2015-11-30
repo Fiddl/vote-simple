@@ -11,7 +11,7 @@ You will need [Leiningen][1] 2.0 or above installed.
 
 ## Running
 
-To start a web server for the vot-simple application, run:
+To start a web server for the vote-simple application, run:
 
     lein run
 
